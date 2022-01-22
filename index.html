@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-
 <body>
-
   <header class="page-header">
     <nav class="navigation">
       <a class="nav-logo" href="https://htmlacademy.ru/">
@@ -24,7 +22,7 @@
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul>
+      <ul class="navigation-search">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">
@@ -45,73 +43,86 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <section class="welcome">
-      <img class="welcome-logo" src="#" alt="Седона">
-      <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <div class="welcome-img">
+        <img class="welcome-logo" src="#" alt="Седона">
+      </div>
+      <div class="welcome-descript">
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
     </section>
     <section class="advantages">
-      <div class="photo-city">
-        <p class="photo-city-title">Настоящий городок</p>
-        <p class="photo-city-number">— №1 —</p>
-        <p class="photo-city-description">Седона — не аттракцион<br> для туристов, там течёт<br> своя жизнь</p>
-        <img src="#" alt="настоящий городок">
-      </div>
-      <p class="visually-hidden">Доступность</p>
-      <ul class="availability">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="availability-list">
         <li class="availability-item">
-          <p class="availability-title">Жильё</p>
-          <p class="availability-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+          <div class="availability-item-inner">
+            <div class="availability-content availability-content-dark">
+              <h3 class="availability-title">Настоящий городок</h3>
+              <p class="availability-number">— №1 —</p>
+              <p class="availability-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img src="#" alt="настоящий городок">
+          </div>
+          <div class="availability-item-inner">
+            <div class="availability-content">
+              <h3 class="availability-title availability-content-cold">Жильё</h3>
+              <p class="availability-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="availability-content">
+              <h3 class="availability-title">Еда</h3>
+              <p class="availability-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </div>
+            <div class="availability-content availability-content-cold">
+              <h3 class="availability-title">Сувениры</h3>
+              <p class="availability-description">Не только китайского, но и настоящего местного производства!</p>
+            </div>
+          </div>
         </li>
         <li class="availability-item">
-          <p class="availability-title">Еда</p>
-          <p class="availability-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
-          </p>
+          <div class="availability-item-inner">
+            <div class="availability-content  availability-content-dark">
+              <h3 class="availability-title">Там есть мост дьявола</h3>
+              <p class="availability-number">— №2 —</p>
+              <p class="availability-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img src="#" alt="мост дьявола">
+          </div>
         </li>
         <li class="availability-item">
-          <p class="availability-title">Сувениры</p>
-          <p class="availability-description">Не только китайского,<br> но и настоящего местного<br> производства!</p>
-        </li>
-      </ul>
-      <div class="photo-city">
-        <h3 class="photo-city-title">Там есть мост дьявола</h3>
-        <p class="photo-city-number">— №2 —</p>
-        <p class="photo-city-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
-        <img src="#" alt="мост дьявола">
-      </div>
-      <p class="visually-hidden">Преимущества</p>
-      <ul class="features">
-        <li class="availability-item">
-          <h3 class="availability-title">Небольшая площадь</h3>
-          <p class="availability-number">— №3 —</p>
-          <p class="availability-description">Все достопримечательности<br> находятся очень близко</p>
+          <div class="availability-content">
+            <h3 class="availability-title">Небольшая площадь</h3>
+            <p class="availability-number">— №3 —</p>
+            <p class="availability-description">Все достопримечательности находятся очень близко</p>
+          </div>
         </li>
         <li class="availability-item">
-          <h3 class="availability-title">Красивая дорога</h3>
-          <p class="availability-number">— №4 —</p>
-          <p class="availability-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+          <div class="availability-content availability-content-cold">
+            <h3 class="availability-title">Красивая дорога</h3>
+            <p class="availability-number">— №4 —</p>
+            <p class="availability-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
         </li>
         <li class="availability-item">
-          <h3 class="availability-title">Мало туристов</h3>
-          <p class="availability-number">— №5 —</p>
-          <p class="availability-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
+          <div class="availability-content">
+            <h3 class="availability-title">Мало туристов</h3>
+            <p class="availability-number">— №5 —</p>
+            <p class="availability-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
     </section>
     <section class="search">
       <h1 class="search-title">Заинтересовались?</h1>
-      <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-        гостиниц в Седоне</p>
-      <button class="search-button" type="button">
-        ПОИСК ГОСТИНИЦЫ В седоне
-      </button>
+      <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        Седоне</p>
+      <a class="button" href="#">Поиск гостиницы в Седоне</a>
     </section>
     <article class="distribution">
       <h1 class="distribution-title">Подпишитесь на рассылку</h1>
-      <p class="distribution-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-
+      <p class="distribution-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="distribution-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="" type="email" name="subscription-email" id="subscription-email" value="Ваш e-mail">
         <button class="button" type="submit">
@@ -119,10 +130,8 @@
         </button>
       </form>
     </article>
-
   </main>
   <footer class="page-footer">
-
     <ul class="footer-social">
       <li class="footer-social-item">
         <a class="button" href="https://twitter.com/htmlacademy_ru">
@@ -144,5 +153,4 @@
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
   </footer>
 </body>
-
 </html>
