@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans";
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.navigation-list {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.navigation-link {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.welcome {
+    background-image: url("/images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.welcome-img {
+    width: 1200px;
+    height: 485px;
+}
+
+.welcome-descript {
+    text-align: center;
+}
+
+.welcome-descript h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.welcome-descript p {
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.availability-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.availability-item {
+    text-align: center;
+}
+
+.availability-content-dark {
+    background-color: #83B3D3;
+    color: #FFFFFF;
+}
+
+.availability-content-cold {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.availability-content-coldlight {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.availability-description {
+    color: #333333;
+}
+
+.availability-description-light {
+    color: #FFFFFF;
+}
+
+.search {
+    text-align: center;
+}
+
+.search-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.search-description {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.search a {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.distribution {
+    text-align: center;
+    color: #FFFFFF;
+    background-image: url("../images/background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 411px;
+}
+
+.distribution-title {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.distribution-description {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.footer-phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*catalog*/
+
+.wrapper {
+    background-image: url("../images/catalog-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #756257;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.check {
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.sorting h2 {
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.hotel-card-title {
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.hotel-card-discription {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+.hotel-card-choice {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+}
+
+.hotel-card-button {
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.button-more {
+    background-color: #756257;
+}
+
+.button-favorites {
+    background-color: #83B3D3;
+}
+
+.hotel-rating {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333333;
+    background: #F2F2F2;
+}
+
+.load-more {
+    background: #83B3D3;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    }
+
+.load-more a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.pagination-list {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.pagination-amount h3 {
+    font-size: 18px;
+line-height: 23px;
+color: #333333;
+}
+
+.distribution-catalog {
+    background-image: none;
+    color: #000000;
+}
