@@ -23,7 +23,7 @@
                     <a class="navigation-link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link">Гостиницы</a>
+                    <a class="navigation-link navigation-link-current">Гостиницы</a>
                 </li>
             </ul>
             <ul>
@@ -55,7 +55,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    <a class="breadcrumbs-link-home" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
@@ -115,28 +115,27 @@
                 <fieldset class="filter-price">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar" style="width: 65%; margin-left: 3%">
-                                </div>
-                            </div>
-                            <div class="toggle toggle-min" tabindex="0" style="left: 0%">
-                            </div>
-                            <div class="toggle toggle-max" tabindex="0" style="left: 79%">
-                            </div>
+                      <div class="price-controls">
+                        <div class="price-controls-container">
+                          <input type="text" name="min-price" id="min-price" value="0">
+                          <label class="min-price" for="min-price">от</label>
                         </div>
-                        <div class="price-controls">
-                            <label class="min-price">
-                                <input type="text" name="min-price" value="0 от">
-                            </label>
-                            <label class="max-price">
-                                до <input type="text" name="max-price" value="9000 до">
-                            </label>
+                        <div class="price-controls-container">
+                          <input type="text" name="max-price" id="max-price" value="9000">
+                          <label class="max-price" for="max-price">до</label>
                         </div>
+                      </div>
+                      <div class="range-controls">
+                        <div class="scale"></div>
+                         <button class="toggle toggle-min" type="button"><span class="visually-hidden">Минимальное значение</span></button>
+                         <button class="toggle toggle-max" type="button"><span class="visually-hidden">Максимальное значение</span></button>
+                       </div>
                     </div>
-                </fieldset>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
+                  </fieldset>
+                  <fieldset class="catalog-filter-button">
+                <button class="catalog-filter-submit button" type="submit">Применить</button>
+                <button class="catalog-filter-reset button" type="reset">Сбросить</button>
+
             </form>
         </section>
 </div>
@@ -147,22 +146,16 @@
                 <option value="cheap">Сначала дешёвые</option>
                 <option value="expensive">Сначала дорогие</option>
             </select>
-            <div class="sorting-icons">
-                <div class="show-cards">
-                    <a class="button button-active" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
-                </div>
-                <div class="slideshow">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать слайд-шоу</span>
-                    </a>
-                </div>
-                <div class="show-list">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
-                </div>
+            <div class="sorting-view">
+                <a class="sorting-view-icon sorting-view-tile sorting-view-icon-active" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+                </a>
+                <a class="sorting-view-icon sorting-view-slideshow" href="#">
+                  <span class="visually-hidden">Показать слайд-шоу</span>
+                </a>
+                <a class="sorting-view-icon sorting-view-list" href="#">
+                  <span class="visually-hidden">Показать список</span>
+                </a>
             </div>
         </section>
         <section class="hotel-cards-block">
@@ -182,10 +175,10 @@
                         <a class="button hotel-card-button-favorites" href="#">В избранное</a>
                     </div>
                     <div class="hotel-block-rating">
-                        <div class="amara-stars">
+                        <div class="hotel-block-rating-stars">
                             <img src="images/star.svg" width="18px" height="17px" alt="amara-stars">
                         </div>
-                        <p class="hotel-rating amara-rating">Рейтинг: 8,5</p>
+                        <p class="hotel-block-rating-text">Рейтинг: 8,5</p>
                     </div>
                 </li>
                 <li class="hotel-card">
@@ -202,10 +195,10 @@
                         <a class="button hotel-card-button-favorites" href="#">В избранное</a>
                     </div>
                     <div class="hotel-block-rating">
-                        <div class="desert-stars">
+                        <div class="hotel-block-rating-stars">
                             <img src="images/star.svg" width="18px" height="17px" alt="desert-stars">
                         </div>
-                        <p class="hotel-rating desert-rating">Рейтинг: 8,9</p>
+                        <p class="hotel-block-rating-text">Рейтинг: 8,9</p>
                     </div>
                 </li>
                 <li class="hotel-card">
@@ -222,10 +215,10 @@
                         <a class="button hotel-card-button-favorites button-favorites-current" href="#">В избранном</a>
                     </div>
                     <div class="hotel-block-rating">
-                        <div class="villas-stars">
-                            <img src="../images/star.svg" width="18px" height="17px" alt="villas-stars">
+                        <div class="hotel-block-rating-stars">
+                            <img src="images/star.svg" width="18px" height="17px" alt="villas-stars">
                         </div>
-                        <p class="hotel-rating villas-rating">Рейтинг: 9,2</p>
+                        <p class="hotel-block-rating-text">Рейтинг: 9,2</p>
                     </div>
                 </li>
                 <li class="hotel-card">
@@ -242,15 +235,15 @@
                         <a class="button hotel-card-button-favorites" href="#">В избранное</a>
                     </div>
                     <div class="hotel-block-rating">
-                        <div class="greentree-stars">
+                        <div class="hotel-block-rating-stars">
                             <img src="images/star.svg" width="18px" height="17px" alt="greentree-stars">
                         </div>
-                        <p class="hotel-rating greentree-rating">Рейтинг: 9,2</p>
+                        <p class="hotel-block-rating-text">Рейтинг: 9,2</p>
                     </div>
                 </li>
             </ul>
             <div class="load-more">
-                <a class="button" href="#">Загрузить ещё</a>
+                <a class="button load-more" href="#">Загрузить ещё</a>
             </div>
         </section>
         <section class="pagination">
