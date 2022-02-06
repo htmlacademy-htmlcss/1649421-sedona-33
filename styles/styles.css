@@ -20,12 +20,39 @@ body {
     line-height: 21px;
     background-color: #FFFFFF;
     color: #000000;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1200px;
+}
+
+html {
+    height: 100%;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-header {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
 }
 
 .navigation-list {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    display: flex;
+    width: 345px;
+    justify-content: space-around;
 }
 
 .navigation-link {
@@ -40,6 +67,18 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    background: #83B3D3;
+}
+
+.navigation-search {
+    display: flex;
+    justify-content: space-around;
+    width: 304px;
+    margin-left: auto;
 }
 
 .navigation-button {
@@ -47,19 +86,21 @@ body {
     border-radius: 4px;
 }
 
-
-.welcome {
-    background-image: url("../images/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.main-container {
+    flex-grow: 1;
 }
 
 .welcome-img {
-    height: 485px;
+    background-size: cover;
+    background-image: url("../images/index-background.jpg");
+    display: flex;
+    justify-content: center;
 }
 
 .welcome-descript {
     text-align: center;
+    width: 720px;
+    margin: 0 auto;
 }
 
 .welcome-descript h1 {
@@ -74,6 +115,11 @@ body {
     color: #333333;
 }
 
+.availability-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .availability-title {
     font-size: 24px;
     line-height: 28px;
@@ -82,6 +128,19 @@ body {
 
 .availability-item {
     text-align: center;
+}
+
+.availability-item-inner {
+    display: flex;
+    width: 100%;
+}
+
+.availability-round {
+    flex-direction: row-reverse;
+}
+
+.availability-content {
+    width: 400px;
 }
 
 .availability-content-dark {
@@ -99,6 +158,8 @@ body {
 
 .availability-description {
     color: #333333;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .availability-description-light {
@@ -107,6 +168,8 @@ body {
 
 .search {
     text-align: center;
+    width: 720px;
+    margin: 0 auto;
 }
 
 .search-title {
@@ -127,6 +190,12 @@ body {
     line-height: 36px;
 }
 
+.button-search-hotel {
+    width: 575px;
+    background: #756257;
+    border-radius: 10px;
+}
+
 .distribution {
     text-align: center;
     color: #FFFFFF;
@@ -140,12 +209,33 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    width: 720px;
+    margin: 0 auto;
 }
 
 .distribution-description {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.distribution-form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 61px;
 }
 
 .footer-phone {
@@ -154,11 +244,15 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*catalog*/
 
-.wrapper {
+.filter-wrapper {
     background-image: url("../images/catalog-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -169,6 +263,10 @@ body {
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+}
+
+.breadcrumbs {
+    display: flex;
 }
 
 .breadcrumbs-link {
@@ -184,10 +282,31 @@ body {
     color: #FFFFFF;
 }
 
+.catalog-filter {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.catalog-filter-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-controls {
+    display: flex;
+}
+
 .check {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+.sorting {
+    display: flex;
+    width: 1057px;
+    margin: 0 auto;
 }
 
 .sorting h2 {
@@ -195,6 +314,38 @@ body {
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
+    width: 338px;
+    margin-right: 191px;
+}
+
+.select-control {
+    width: 287px;
+}
+
+.sorting-view {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sorting-view-icon {
+    width: 48px;
+}
+
+.hotel-cards-block {
+    width: 1058px;
+    margin: 0 auto;
+}
+
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel-card {
+    width: 339px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hotel-card-title {
@@ -251,6 +402,9 @@ body {
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
+    width: 620px;
+    margin: 0 auto;
+    height: 60px;
 }
 
 .load-more a {
