@@ -14,6 +14,12 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -30,7 +36,6 @@ body {
 
 html {
     height: 100%;
-    box-sizing: border-box;
     background-color: #E5E5E5;
 }
 
@@ -201,7 +206,6 @@ html {
 .availability-content {
     width: 400px;
     padding: 98px 75px 77px 75px;
-    box-sizing: border-box;
 }
 
 .availability-content-dark {
@@ -318,6 +322,10 @@ html {
 .footer-social-item {
     margin-right: 30px;
     flex-wrap: wrap;
+}
+
+.footer-social-link svg {
+   fill: #83B3D3;
 }
 
 .footer-social-item:nth-child(3n) {
