@@ -66,8 +66,8 @@ html {
 }
 
 .page-header {
-    width: 1060px;
-    margin: 0 auto;
+    padding: 0 70px;
+    margin: 0;
 }
 
 .navigation {
@@ -76,12 +76,12 @@ html {
 
 .nav-logo {
     margin-right: 30px;
+    display: block;
+    width: 139px;
+    height: 70px;
 }
 
 .navigation-list {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -96,8 +96,10 @@ html {
 }
 
 .navigation-link {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
     text-align: center;
-    text-transform: uppercase;
     text-decoration: none;
     color: #000000;
     padding-bottom: 20px;
@@ -114,6 +116,8 @@ html {
     line-height: 26px;
     font-weight: bold;
     background: #83B3D3;
+    border-radius: 4px;
+    border: none;
 }
 
 .navigation-search {
@@ -121,15 +125,13 @@ html {
     margin-left: auto;
 }
 
-.navigation-link-search,
-.navigation-link-favorites {
+.navigation-link-icon {
     min-width: 42px;
     min-height: 66px;
 }
 
 .navigation-button {
     background: #756257;
-    border-radius: 4px;
 }
 
 .main-container {
@@ -139,14 +141,15 @@ html {
 .welcome-img {
     background-size: cover;
     background-image: url("../images/index-background.jpg");
+    padding-top: 51px;
+    padding-bottom: 25px;
 }
 
 .welcome-logo {
-    padding-top: 51px;
-    padding-bottom: 25px;
     display: block;
     margin: 0 auto;
     height: 352px;
+    width: 458px;
 }
 
 .welcome-descript {
@@ -185,6 +188,7 @@ html {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    padding: 0 40px;
 }
 
 .availability-number {
@@ -207,15 +211,16 @@ html {
 .availability-content {
     width: 400px;
     padding: 98px 75px 77px 75px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.availability-content-food {
+    background-color: #FFFFFF;
 }
 
 .availability-content-dark {
     background-color: #83B3D3;
     color: #FFFFFF;
-}
-
-.availability-content-cold {
-    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .availability-content-coldlight {
@@ -255,17 +260,14 @@ html {
 
 }
 
-.search a {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 36px;
-}
-
 .button-search-hotel {
     width: 575px;
     background: #756257;
     border-radius: 10px;
     padding: 15px 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .distribution {
@@ -282,7 +284,6 @@ html {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    width: 720px;
     margin: 0 auto;
     padding-bottom: 15px;
 }
@@ -319,7 +320,6 @@ html {
     grid-template-columns: 18px 10px 20px;
     gap: 30px;
     align-items: center;
-    margin-right: 61px;
 }
 
 .footer-social-link svg {
@@ -337,13 +337,13 @@ html {
     text-decoration: none;
     color: #000000;
     display: block;
-    margin: 0 auto;
     text-align: center;
+    margin-left: 60px;
+    margin-right: 53px;
 }
 
 .htmlacademy-link {
     display: block;
-    margin-left: 53px;
 }
 
 /*catalog*/
@@ -358,7 +358,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #756257;
-    margin-top: 0;
     padding: 35px 72px 83px 71px;
 }
 
@@ -373,6 +372,13 @@ html {
     display: flex;
     color: #FFFFFF;
     margin-bottom: 45px;
+}
+
+.breadcrumbs-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .breadcrumbs-link-home {
@@ -391,9 +397,8 @@ html {
 
 .catalog-filter {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     gap: 19px;
-
 }
 
 .catalog-filter-button {
@@ -406,7 +411,6 @@ html {
 }
 
 .check {
-    font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
 }
@@ -414,9 +418,8 @@ html {
 .sorting {
     display: flex;
     margin: 0 auto;
-    margin-top: 44px;
-    margin-bottom: 53px;
-    height: 48px;
+    padding-top: 44px;
+    padding-bottom: 53px;
 }
 
 .catalog-wrapper {
@@ -429,13 +432,14 @@ html {
     line-height: 39px;
     text-transform: uppercase;
     color: #000000;
-    margin-right: 191px;
+    margin-right: auto;
     margin-top: 0;
 }
 
 .select-control {
     width: 287px;
     margin-right: 81px;
+    height: 48px;
 }
 
 .sorting-view {
@@ -447,7 +451,6 @@ html {
 .sorting-view-icon {
     width: 48px;
     height: 48px;
-    margin-right: 8px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
     display: flex;
@@ -463,13 +466,9 @@ html {
     margin-right: 0;
 }
 
-.hotel-cards-block {
-    margin: 0 auto;
-}
-
 .hotel-list {
     display: grid;
-    grid-template-columns: repeat(3, 339px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 34px;
 }
@@ -520,16 +519,18 @@ html {
     line-height: 21px;
 }
 
-.hotel-card-button-more {
-    background-color: #756257;
-    padding-top: 9px;
-    padding-bottom: 10px;
-}
-
+.hotel-card-button-more,
 .hotel-card-button-favorites {
     padding-top: 9px;
     padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 21px;
 }
+
+.hotel-card-button-more {
+    background-color: #756257;
+}
+
 
 .hotel-block-rating {
     font-size: 16px;
@@ -543,39 +544,46 @@ html {
 .hotel-block-rating-stars {
     align-items: center;
     display: flex;
+    margin-right: 49px;
 }
 
 .hotel-block-rating-text {
-    display: block;
-    justify-content: flex-end;
-    padding-right: 66px;
+    display: inline-block;
+    padding-top: 9px;
+    padding-bottom: 10px;
     background: #F2F2F2;
+    height: 37px;
+    color: #333333;
+    width: 160px;
+    text-align: center;
 }
 
 .load-more {
-    background: #83B3D3;
+
     border-radius: 4px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    width: 620px;
+    padding: 30px 0;
     margin: 0 auto;
-    padding: 17px 0;
-    margin-top: 64px;
-    margin-bottom: 60px;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    margin-bottom: 30px;
 }
 
 .load-more a {
     color: #FFFFFF;
     text-decoration: none;
+    padding: 17px 0;
+    background: #83B3D3;
+    width: 620px;
 }
 
 .pagination {
     display: flex;
     margin: 0 auto;
-    height: 55px;
 }
 
 .pagination-list {
@@ -586,14 +594,11 @@ html {
 }
 
 .pagination-item {
-    width: 55px;
-    height: 55px;
     margin-right: 8px;
     background-color: #83B3D3;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
 }
 
 .pagination-item-current {
@@ -603,6 +608,11 @@ html {
 .pagination-link {
     text-decoration: none;
     color: #FFFFFF;
+    min-width: 55px;
+    min-height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .pagination-link-current {
