@@ -152,7 +152,7 @@
         </section>
         <section class="search">
             <h2 class="search-title">Заинтересовались?</h2>
-            <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+            <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
                 гостиниц в
                 Седоне</p>
             <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
@@ -258,8 +258,8 @@
                     <div class="field-group">
                         <label class="field-group-label" for="appointment-date">Дата выезда:</label>
                         <div class="field-group-input">
-                            <input class="field" type="text" id="appointment-date" name="appointment-date"
-                                placeholder="1 сентября 2021">
+                            <input class="auth-form-field field" type="text" id="appointment-date"
+                                name="appointment-date" placeholder="1 сентября 2021">
                             <p class="field-group-info">На эти даты есть свободные номера. Пока есть.</p>
                         </div>
                     </div>
@@ -268,20 +268,47 @@
                             <label class="field-group-label" for="appointment-date-adult">Взрослые:</label>
                             <input class="field field-person" type="text" id="appointment-date-adult"
                                 name="appointment-date" placeholder="2">
+                                <button class="field-button field-controls-less" type="button">
+                                    <span class="visually-hidden">Меньше</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                                        </svg>
+                                </button>
+                                <button class="field-button field-controls-more" type="button">
+                                    <span class="visually-hidden">Больше</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                                        </svg>
+                                </button>
                         </div>
                         <div class="field-group">
                             <div class="field-group-info">
-                                <label class="field-group-label-child" for="appointment-date-child">Дети:</label>
+                                <label class="field-group-label field-group-label-child"
+                                    for="appointment-date-child">Дети:</label>
                                 <div class="field-info">
-                                    <button class="field-info-button" type="button">
+                                    <button class="field-info-button" type="button" aria-labelledby="tooltip-label">
                                         <span class="visually-hidden">Подсказка</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                                            </svg>
                                     </button>
-                                    <p class="field-info-text">Укажите количество детей, которые будут с вами, возраст
-                                        которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                                    <p class="field-info-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                                 </div>
                             </div>
                             <input class="field field-person" type="text" id="appointment-date-child"
                                 name="appointment-date" placeholder="1">
+                                <button class="field-button field-child-controls-less" type="button">
+                                    <span class="visually-hidden">Меньше</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                                        <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                                        </svg>
+                                </button>
+                                <button class="field-button field-child-controls-more" type="button">
+                                    <span class="visually-hidden">Больше</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                                        </svg>
+                                </button>
                         </div>
                     </div>
 
@@ -291,7 +318,7 @@
             </section>
         </div>
     </div>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
