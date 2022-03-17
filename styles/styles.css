@@ -5,7 +5,7 @@
 
     font-display: swap;
     src: url("../fonts/ptsans-400.woff") format("woff"),
-        url("../fonts/ptsans-400.woff2") format("woff2");
+         url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 
     font-display: swap;
     src: url("../fonts/ptsans-700.woff") format("woff"),
-        url("../fonts/ptsans-700.woff2") format("woff2");
+         url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 *,
@@ -81,7 +81,6 @@ html {
 
 .nav-logo {
     z-index: 1;
-
     display: block;
     width: 139px;
     height: 70px;
@@ -121,7 +120,6 @@ html {
 
 .navigation-link-current {
     color: #000000;
-
     border-bottom: 2px solid #756257;
 }
 
@@ -227,6 +225,7 @@ html {
     padding-bottom: 25px;
     background-image: url("../images/index-background.jpg");
     background-size: cover;
+    background-color: #68a2ca;
 }
 
 .welcome-img-divider {
@@ -523,7 +522,7 @@ html {
 }
 
 .footer-social-link:focus {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
     border-radius: 10px;
 }
 
@@ -577,8 +576,6 @@ html {
     border-radius: 10px;
     outline: 3px solid #83b3d3;
 }
-
-/*catalog*/
 
 .main-inner {
     margin: 0;
@@ -1240,7 +1237,6 @@ html {
     color: #333333;
 }
 
-/*Модальное окно*/
 .modal-container {
     position: fixed;
     top: 0;
