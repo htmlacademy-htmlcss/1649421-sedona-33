@@ -300,6 +300,7 @@ html {
 .availability-item-inner {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .availability-round {
@@ -367,6 +368,10 @@ html {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.search-description span {
+    text-align: center;
 }
 
 .search-description {
@@ -443,6 +448,14 @@ html {
     border: transparent;
     border-radius: 10px 0 0 10px;
 }
+/*
+.distribution-form-input:invalid {
+    background: #ffffff;
+    outline: 2px solid #ff5757;
+*/
+.error {
+    outline: 2px solid #ff5757;
+}
 
 .distribution-form-input:hover {
     background: #e6e6e6;
@@ -451,11 +464,6 @@ html {
 .distribution-form-input:focus {
     background: #e6e6e6;
     outline: 3px solid #83b3d3;
-}
-
-.distribution-form-input:disabled {
-    background: #ffffff;
-    outline: 2px solid #ff5757;
 }
 
 .button-subscribe {
@@ -1145,7 +1153,7 @@ html {
     border-bottom: 1px solid #e6e6e6;
 }
 
-.load-more a {
+.load-more-button {
     width: 620px;
     padding: 17px 0;
     color: #ffffff;
@@ -1161,6 +1169,7 @@ html {
 
 .pagination-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .pagination-item {
@@ -1363,11 +1372,11 @@ html {
     right: 20px;
     width: 15px;
     height: 15px;
-    background-image: url("../images/calendar.svg");
+    background-image: url("../images/date.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    outline: none;
+    outline: transparent;
     opacity: 0.3;
 }
 
